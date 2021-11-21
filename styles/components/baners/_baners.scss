@@ -1,0 +1,106 @@
+.baners-component {
+    width: 100%;
+    margin-top: 140px;
+    .baners-content-container {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        &__heading-container {
+            color: $color-white;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top: 60px;
+            line-height: 5rem;
+        }
+        &__baners-container {
+            width: 92%;
+            display: flex;
+            @include break-point-down(md) {
+                width: 100%;
+            }
+            &--baner {
+                width: 100%;
+                margin-right: 15px;
+                height: 540px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($color: $color-black, $alpha: .4);
+                    content: '';
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:nth-child(1) {
+                    background-image: url('../../../assets/galery/img1.jpg');
+                }
+                &:nth-child(2) {
+                    background-image: url('../../../assets/galery/img2.jpg');
+                }
+                &:nth-child(3) {
+                    background-image: url('../../../assets/galery/img3.jpg');
+                }
+            }
+        }
+        &::before {
+            left: 0;
+            content: '';
+            width: 80px;
+            background-color: $color-light-gray;
+            height: 120%;
+            top: -10%;
+            position: absolute;
+            @include break-point-down(md) {
+                display: none;
+            }
+        }
+        &::after {
+            bottom: -34px;
+            width: 92%;
+            right: 0;
+            background-color: $color-white;
+            height: 22px;
+            content: '';
+            position: absolute;
+            @include break-point-down(md) {
+                display: none;
+            }
+        }
+    }   
+}
+
+@include break-point-down(xm) {
+    .baners-component  {
+        margin-top: 30px;
+        .baners-content-container {
+            flex-direction: column;
+            &__heading-container {
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 30px;
+                line-height: 4rem;
+            }
+            &__baners-container {
+                flex-direction: column;
+                &--baner {
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                    height: 400px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

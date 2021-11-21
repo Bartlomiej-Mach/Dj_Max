@@ -1,0 +1,35 @@
+.footer-compontent {
+    width: 100%;
+    background-color: $color-light-gray;
+    margin-top: 40px;
+    padding: 15px 0;
+    .footer-content-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: $color-white;
+        &__logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &--logo {
+                font-size: 5rem;
+                color: $color-white;
+            }
+        }
+        &__copyright-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            &--copy {
+                text-align: center;
+                a {
+                    font-size: $font-text;
+                    color: $color-black;
+                    font-family: $font-Blinker;
+                }
+            }
+        }
+    }
+}

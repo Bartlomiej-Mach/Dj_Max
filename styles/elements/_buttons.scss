@@ -1,0 +1,35 @@
+// styling primary button
+
+.btn-primary,
+.btn-secondary {
+    width: 194px;
+    height: 41px;
+    background-color: $color-white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    .button-value {
+        position: relative;
+        font-size: $font-button;
+        font-weight: $font-regular;
+        text-transform: uppercase;
+        color: $color-black;
+        font-family: $font-fjalla;
+    }
+    &:hover {
+        transform: translateY(-5px);
+    }
+    &:active {
+        transform: translateY(2px) scale(.95);
+    }
+}
+
+.btn-secondary {
+    background-color: rgba($color: $color-black, $alpha: 0.8);
+    .button-value {
+        color: $color-white;
+    }
+}

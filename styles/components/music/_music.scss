@@ -1,0 +1,88 @@
+.music-component {
+    width: 100%;
+    margin-top: 140px;
+    .music-content-container {
+        width: 100%;
+        display: flex;
+        color: $color-white;
+        &__playlist-container {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            .holder {
+                width: 500px;
+                height: 100%;
+                background-color: $color-dark-gray;
+                padding: 16px;
+            }
+            &--playlist {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__content-container {
+            width: 50%;
+            padding: 80px 0 80px 20px;
+            &--heading {
+                line-height: 5rem;
+                position: relative;
+                z-index: 1;
+                text-transform: uppercase;
+                position: relative;
+                &::before {
+                    left: 0;
+                    top: -40px;
+                    content: 'WSŁUCHAJ SIĘ';
+                    font-family: $font-Blinker;
+                    font-size: $font-h3-desktop;
+                    font-weight: $font-extra-light;
+                    position: absolute;
+                    @include break-point-down(md) {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            &--text {
+                margin: 20px 0 40px 0;
+                max-width: 375px;
+            }
+        }
+    }
+}
+
+
+@include break-point-down(xm) {
+    .music-component {
+        margin-top: 30px;
+        .music-content-container {
+            flex-direction: column-reverse;
+            &__playlist-container {
+                width: 100%;
+                .holder {
+                    width: 100%;
+                    height: 500px;
+                }
+            }
+            &__content-container {
+                width: 100%;
+                padding: 30px 0 50px 0px;
+                &--heading {
+                    line-height: 3.6rem;
+                    &::before {
+                        top: -30px;
+                    }
+                }
+                &--text {
+                    max-width: 100%;
+                    margin: 20px 0 30px 0;
+                }
+                &--button {
+                    width: 100%;
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

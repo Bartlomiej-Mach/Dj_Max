@@ -1,0 +1,88 @@
+// Sizes
+
+
+$font-h1-desktop: 5.8rem;
+$font-h1-mobile: 3.5rem;
+
+$font-h2-desktop: 6rem;
+$font-h2-mobile: 4rem;
+
+$font-h3-desktop: 3.2rem;
+$font-h3-mobile: 2.4rem;
+
+$font-h4-desktop: 4rem;
+$font-h4-mobile: 4rem;
+
+$font-text: 1.8rem;
+$font-button: 2rem;
+
+// Weight
+
+$font-regular: 400;
+$font-bold: 700;
+$font-light: 300;
+$font-extra-light: 200;
+$font-semi-bold: 600;
+
+// font family
+
+$font-Blinker: 'Blinker', sans-serif;;
+$font-spartan: 'Spartan', sans-serif;
+$font-rock: 'Rock Salt', cursive;
+$font-fjalla: 'Fjalla One', sans-seri;
+
+
+// baisic typography
+html { 
+    font-size: 10px; 
+}
+
+h1 {
+    font-size: $font-h1-desktop;
+    font-weight: $font-regular;
+    font-family: $font-rock;
+    @include break-point-down(md) {
+        font-size: $font-h1-mobile;
+    }
+}
+
+h2 {
+    font-size: $font-h2-desktop;
+    font-weight: $font-semi-bold;
+    font-family: $font-Blinker;
+    @include break-point-down(md) {
+        font-size: $font-h2-mobile;
+    }
+}
+
+h3 {
+    font-size: $font-h3-desktop;
+    font-weight: $font-regular;
+    font-family: $font-Blinker;
+    @include break-point-down(md) {
+        font-size: $font-h3-mobile;
+    }
+}
+
+h4 {
+    font-size: $font-h4-desktop;
+    font-weight: $font-semi-bold;
+    font-family: $font-Blinker;
+    @include break-point-down(md) {
+        font-size: $font-h4-mobile;
+    }
+}
+
+p,
+span {
+    font-family: $font-Blinker;
+    font-weight: $font-light;
+    font-size: $font-text;
+}
+
+a {
+    text-decoration: none;
+    font-size: $font-button;
+    font-weight: $font-regular;
+    font-family: $font-fjalla;
+}
