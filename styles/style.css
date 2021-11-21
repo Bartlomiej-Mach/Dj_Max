@@ -24,12 +24,14 @@ h1 {
 h2 {
   font-size: 6rem;
   font-weight: 600;
+  line-height: 6rem;
   font-family: "Blinker", sans-serif;
 }
 
 @media (max-width: 1024px) {
   h2 {
     font-size: 4rem;
+    line-height: 4rem;
   }
 }
 

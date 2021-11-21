@@ -49,9 +49,11 @@ h1 {
 h2 {
     font-size: $font-h2-desktop;
     font-weight: $font-semi-bold;
+    line-height: $font-h2-desktop;
     font-family: $font-Blinker;
     @include break-point-down(md) {
         font-size: $font-h2-mobile;
+        line-height: $font-h2-mobile;
     }
 }
 
