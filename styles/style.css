@@ -690,7 +690,8 @@ body, html {
   min-height: 530px;
   position: relative;
   display: block;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../../../assets/galery/personal.jpg");
@@ -1394,6 +1395,9 @@ body, html {
   }
   .contact-coponent .contact-content-container__content-container--social {
     padding-left: 0;
+  }
+  .contact-coponent .contact-content-container__content-container--heading {
+    line-height: 4rem;
   }
   .contact-coponent .contact-content-container__form-container {
     width: 100%;
