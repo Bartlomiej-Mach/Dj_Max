@@ -746,7 +746,7 @@ body, html {
 
 .information-component .information-content-container__content-container--heading::before {
   left: 0;
-  top: -20px;
+  top: -40px;
   content: 'WITAJCIE';
   font-family: "Blinker", sans-serif;
   font-size: 3.2rem;
