@@ -316,13 +316,19 @@
                     </div>
                 </div>
                 <div class="contact-content-container__form-container">
-                    <form action="">
+                    <form action="https://formsubmit.co/bartekmachu@gmail.com" method="POST">
                         <h4 class="form-heading">
                             PRZEŚLIJ MI WIADOMOŚĆ
                         </h4>
-                        <input type="text" placeholder="Imię i nazwisko">
+
+                        <input type="hidden" name="_next" value="https://max-demoo.netlify.app/">
+                        <input type="hidden" name="_subject" value="Wiadomość ze strony">
+                        <input type="text" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false"> 
+
+                        <input type="text" placeholder="Imię&nbsp;i&nbsp;nazwisko">
                         <input type="email" placeholder="E-mail">
-                        <input type="tel" placeholder="Numer telefonu">
+                        <input type="tel" placeholder="Numer&nbsp;telefonu">
                         <textarea name="" placeholder="Wiadomość..."></textarea>
 
                         <button type="submit" class="btn-primary"> 
