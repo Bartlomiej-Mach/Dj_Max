@@ -10,7 +10,7 @@
             display: flex;
             justify-content: flex-end;
             .holder {
-                width: 500px;
+                width: 100%;
                 height: 100%;
                 background-color: $color-dark-gray;
                 padding: 16px;
@@ -22,29 +22,19 @@
         }
         &__content-container {
             width: 50%;
-            padding: 80px 0 80px 20px;
+            padding: 20px 0 80px 20px;
             &--heading {
                 line-height: 5rem;
                 position: relative;
                 z-index: 1;
                 text-transform: uppercase;
                 position: relative;
-                &::before {
-                    left: 0;
-                    top: -40px;
-                    content: 'WSŁUCHAJ SIĘ';
-                    font-family: $font-Blinker;
-                    font-size: $font-h3-desktop;
-                    font-weight: $font-extra-light;
-                    position: absolute;
-                    @include break-point-down(md) {
-                        font-size: 2.4rem;
-                    }
-                }
             }
             &--text {
                 margin: 20px 0 40px 0;
-                max-width: 375px;
+                &:nth-child(1) {
+                    margin: 20px 0 20px 0; 
+                }
             }
         }
     }
