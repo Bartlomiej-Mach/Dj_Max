@@ -1387,6 +1387,7 @@ body, html {
 
 .contact-coponent .contact-content-container__form-container form button {
   border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
