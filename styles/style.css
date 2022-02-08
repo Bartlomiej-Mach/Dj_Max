@@ -1379,10 +1379,13 @@ body, html {
   line-height: 3rem;
 }
 
-.contact-coponent .contact-content-container__form-container form textarea {
+.contact-coponent .contact-content-container__form-container form .textarea {
   max-width: 100%;
   min-width: 100%;
   height: 240px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .contact-coponent .contact-content-container__form-container form button {
