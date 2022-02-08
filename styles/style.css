@@ -889,6 +889,9 @@ body, html {
     width: 100%;
     height: 200px;
   }
+  .information-component .information-additional-content-container-reverse .information-additional-content-container__content-container {
+    padding-left: 0px;
+  }
 }
 
 .baners-component {
