@@ -738,8 +738,6 @@ body, html {
   z-index: 1;
   text-transform: uppercase;
   position: relative;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
   margin-bottom: 20px;
 }
 
