@@ -182,6 +182,10 @@ body, html {
   color: #fff;
 }
 
+.navigation-component .navigation-content-container__logo-list-holder--logo a img {
+  width: 150px;
+}
+
 .navigation-component .navigation-content-container__logo-list-holder--list .hamburger-menu {
   z-index: 10;
   position: relative;
@@ -1455,6 +1459,10 @@ body, html {
 .footer-compontent .footer-content-container__logo-container--logo {
   font-size: 5rem;
   color: #fff;
+}
+
+.footer-compontent .footer-content-container__logo-container--logo img {
+  width: 240px;
 }
 
 .footer-compontent .footer-content-container__copyright-container {
