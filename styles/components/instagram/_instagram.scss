@@ -44,6 +44,25 @@
                     background-image: url('../../../assets/galery/item-8.jpg');
                 }
             }
+            &--item3 {
+                width: 25%;
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:nth-child(1) {
+                    background-image: url('../../../assets/galery/item-9.jpg');
+                }
+                &:nth-child(2) {
+                    background-image: url('../../../assets/galery/item-10.jpg');
+                }
+                &:nth-child(3) {
+                    background-image: url('../../../assets/galery/item-11.jpg');
+                }
+                &:nth-child(4) {
+                    background-image: url('../../../assets/galery/item-12.jpg');
+                }
+            }
         }
         &__link-container {
             padding: 0px 0 0px 40px; 
