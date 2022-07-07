@@ -37,17 +37,6 @@
             }
         }
 
-        &::before {
-            width: 65%;
-            height: 60%;
-            border: 18px solid rgba($color: $color-light-gray, $alpha: .6);
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 0;
-        }
     }
 
     .button-next {

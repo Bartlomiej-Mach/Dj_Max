@@ -551,19 +551,6 @@ body, html {
   margin-right: 0;
 }
 
-.dashboard-component .dashboard-content-container::before {
-  width: 65%;
-  height: 60%;
-  border: 18px solid rgba(117, 117, 117, 0.6);
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 0;
-}
-
 .dashboard-component .button-next {
   position: absolute;
   bottom: 20px;
