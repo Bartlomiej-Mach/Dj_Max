@@ -33,3 +33,14 @@
         color: $color-white;
     }
 }
+
+@include break-point-down(md) {
+    .btn-secondary,
+    .btn-primary {
+        width: 160px;
+        height: 30px;
+        .button-value {
+            font-size: $font-button-mobile;
+        }
+    }
+}

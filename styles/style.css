@@ -9,14 +9,16 @@ html {
 }
 
 h1 {
-  font-size: 5.8rem;
+  font-size: 9rem;
   font-weight: 400;
-  font-family: "Rock Salt", cursive;
+  line-height: 9rem;
+  font-family: "Blinker", sans-serif;
 }
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 
@@ -141,6 +143,18 @@ body, html {
 
 .btn-secondary .button-value {
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .btn-secondary,
+  .btn-primary {
+    width: 160px;
+    height: 30px;
+  }
+  .btn-secondary .button-value,
+  .btn-primary .button-value {
+    font-size: 1.6rem;
+  }
 }
 
 .navigation-component {
@@ -512,10 +526,6 @@ body, html {
   z-index: 1;
 }
 
-.dashboard-component .dashboard-content-container__heading h1 {
-  line-height: 90px;
-}
-
 .dashboard-component .dashboard-content-container__subheading {
   z-index: 1;
 }
@@ -635,13 +645,13 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../../assets/home/photo-1533146303127-f2ef440cfeb5.jpg");
+  background-image: url("../../../assets/home/home-1.jpg");
 }
 
 .dashboard-component .dashboard-background-img::before {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   content: '';
   left: 0;
   top: 0;
@@ -661,10 +671,14 @@ body, html {
 
 @media (max-width: 982px) {
   .dashboard-component .dashboard-content-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 0px;
   }
   .dashboard-component .dashboard-content-container__heading h1 {
     line-height: 50px;
+    text-align: center;
   }
   .dashboard-component .dashboard-content-container__buttons {
     -webkit-box-orient: vertical;

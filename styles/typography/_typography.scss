@@ -1,8 +1,8 @@
 // Sizes
 
 
-$font-h1-desktop: 5.8rem;
-$font-h1-mobile: 3.5rem;
+$font-h1-desktop: 9rem;
+$font-h1-mobile: 5rem;
 
 $font-h2-desktop: 6rem;
 $font-h2-mobile: 4rem;
@@ -15,6 +15,7 @@ $font-h4-mobile: 4rem;
 
 $font-text: 1.8rem;
 $font-button: 2rem;
+$font-button-mobile: 1.6rem;
 
 // Weight
 
@@ -40,9 +41,11 @@ html {
 h1 {
     font-size: $font-h1-desktop;
     font-weight: $font-regular;
-    font-family: $font-rock;
+    line-height: $font-h1-desktop;
+    font-family: $font-Blinker;
     @include break-point-down(md) {
         font-size: $font-h1-mobile;
+        line-height: $font-h1-mobile;
     }
 }
 
