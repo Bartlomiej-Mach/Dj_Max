@@ -1264,7 +1264,7 @@ body, html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .instagram-compontent .instagram-content-container__image-container--item, .instagram-compontent .instagram-content-container__image-container--item2 {
+  .instagram-compontent .instagram-content-container__image-container--item, .instagram-compontent .instagram-content-container__image-container--item2, .instagram-compontent .instagram-content-container__image-container--item3 {
     width: 100%;
     height: 400px;
   }
